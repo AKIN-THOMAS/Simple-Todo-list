@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Todo from "./pages/Todo";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; Uncomment this (code 1)
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  //It's returning only the TODO because that's the only thing that's there. If you want to return more, Install react-router-dom
+  //run `npm i react-router-dom`
+  //The Uncomment this line of code (code 1 and code 2)
+
+  //Code 2
+  // return(
+  //   <Router>
+  //       <Routes>
+  //         <Route path="/" element={<Todo />} />
+  //       </Routes>
+  //     </Router>
+  // )
+
+  return <Todo />;
 }
 
 export default App;
